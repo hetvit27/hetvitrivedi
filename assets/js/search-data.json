@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Issues Page w/ Solutions",
-            "content": "AP CSA Issues . I’ve created a page with common issues that I’ve encountered while working and links to fixes that I have found. . Unresolved Issues . Task title, Week #_ Link | . | . Resolved Issues . Task title, Week #_ Link | . | . Any questions: . I can help with any of these issues via Slack! . Footnotes .",
+            "content": "AP CSA Issues . I’ve created a page with common issues that I’ve encountered while working and links to fixes that I have found. . Unresolved Issues . Issue title, Week #_ Link | . | . Resolved Issues . Issue title, Week #_ Link | . | . Any questions: . I can help with any of these issues via Slack! . Footnotes .",
             "url": "https://hetvit27.github.io/hetvitrivedi/markdown/2022/08/21/issuetracker.html",
             "relUrl": "/markdown/2022/08/21/issuetracker.html",
             "date": " • Aug 21, 2022"
