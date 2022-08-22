@@ -10,11 +10,11 @@ title: Issues Page w/ Solutions
 I've created a page with common issues that I've encountered while working and links to fixes that I have found. 
 
 ### Unresolved Issues
-- [ ] Task title, Week #_  
+- [ ] Issue title, Week #_  
   - [ ] Link  
 
 ### Resolved Issues
-- [x] Task title, Week #_
+- [x] Issue title, Week #_
   - [x] Link  
 
 ## Any questions:
