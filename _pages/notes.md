@@ -1,3 +1,8 @@
+---
+layout: page
+title: Notes and Important CSA Ideas
+
+---
 # Fastpages Notes
 _notebooks: mostly jupyter files. This allows building block of markdown, python, java, javascript into a jupyter notebook.
 _posts: markdown .md files. This supports frontend web design with markdown, html, and javascript.
