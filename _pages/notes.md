@@ -1,8 +1,11 @@
 ---
-layout: page
-title: Notes and Important CSA Ideas
-
+toc: true
+layout: post
+description: Notes and Big Ideas for CSA
+categories: [markdown]
+title: CSA Notes from Tech Talks + Website
 ---
+
 # Fastpages Notes
 _notebooks: mostly jupyter files. This allows building block of markdown, python, java, javascript into a jupyter notebook.
 _posts: markdown .md files. This supports frontend web design with markdown, html, and javascript.
