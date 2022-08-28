@@ -20,6 +20,7 @@ The Home page is sourced by the index.html file. This is the file to personalize
 Primitive Notes
 The primitive data types in Java are: boolean, byte, char, short, int, long, float, and double. For each primitive data type, Java provides a wrapper class that allows the data to be represented as objects. The corresponding wrapper classes are: Boolean, Byte, Character, Short, Integer, Long, Float, and Double. 
 The output is key to formatting and combining data
+Wrapper Classes are non-primitive data type that do not require declaration. Collegeboard provides the example of String -- they are capitalized unlike primitives
 
 # Unit Two: Using Objects
 Goal: Explore reference data in order to represent real-world objects in a digital world and discover methods to initiate more complex operations
