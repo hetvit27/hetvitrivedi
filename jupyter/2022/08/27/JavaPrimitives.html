@@ -301,10 +301,10 @@ window.onload = wrap_img;
         <span class="k">this</span><span class="p">.</span><span class="na">enterVals</span><span class="p">();</span>
     <span class="p">}</span>
 
-    <span class="kd">private</span> <span class="kt">double</span> <span class="n">PE</span><span class="p">;</span>
-    <span class="kd">private</span> <span class="kt">double</span> <span class="n">mass</span><span class="p">;</span>
-    <span class="kd">private</span> <span class="kt">double</span> <span class="n">height</span><span class="p">;</span>
-    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">double</span> <span class="n">g</span> <span class="o">=</span> <span class="mf">9.80</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">PE</span><span class="p">;</span> <span class="c1">// initialize PE double. Stores the final output value.</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">mass</span><span class="p">;</span> <span class="c1">// initialize mass double. Stores it from the user input.</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">height</span><span class="p">;</span> <span class="c1">// initialize height double. Stores it from the user input.</span>
+    <span class="kd">private</span> <span class="kd">static</span> <span class="kt">double</span> <span class="n">g</span> <span class="o">=</span> <span class="mf">9.80</span><span class="p">;</span> <span class="c1">// initialize static double. Stores the constant value.</span>
 
     <span class="kd">private</span> <span class="kt">void</span> <span class="nf">enterVals</span><span class="p">()</span> <span class="p">{</span>
 
@@ -313,10 +313,10 @@ window.onload = wrap_img;
             <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"Enter mass of object in grams: "</span><span class="p">);</span>
             <span class="k">try</span> <span class="p">{</span>
                 <span class="n">mass</span> <span class="o">=</span> <span class="n">dd</span><span class="p">.</span><span class="na">nextDouble</span><span class="p">();</span>
-                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">mass</span><span class="p">);</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">mass</span><span class="p">);</span> <span class="c1">// sets variable to True meaning if the double is entered correctly</span>
                 <span class="k">break</span><span class="p">;</span>
             <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Not an double (form like 9.99), "</span> <span class="o">+</span> <span class="n">e</span><span class="p">);</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Not an double (form like 9.99), "</span> <span class="o">+</span> <span class="n">e</span><span class="p">);</span> <span class="c1">// if it's not a number, it will close.</span>
             <span class="p">}</span>
             <span class="n">dd</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
         <span class="p">}</span>
@@ -337,13 +337,13 @@ window.onload = wrap_img;
 
     <span class="kd">public</span> <span class="kt">double</span> <span class="nf">calculate</span><span class="p">()</span> <span class="p">{</span>
         <span class="kt">double</span> <span class="n">g</span> <span class="o">=</span> <span class="mf">9.80</span><span class="p">;</span>
-        <span class="n">PE</span> <span class="o">=</span> <span class="p">(</span><span class="n">mass</span><span class="o">*</span><span class="n">height</span><span class="o">*</span><span class="n">g</span><span class="p">);</span>
-        <span class="k">return</span> <span class="n">PE</span><span class="p">;</span>
+        <span class="n">PE</span> <span class="o">=</span> <span class="p">(</span><span class="n">mass</span><span class="o">*</span><span class="n">height</span><span class="o">*</span><span class="n">g</span><span class="p">);</span> <span class="c1">// equation for calculating potential energy</span>
+        <span class="k">return</span> <span class="n">PE</span><span class="p">;</span> <span class="c1">// outputs calculated value.</span>
     <span class="p">}</span>
 
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">PotentialEnergyCalculator</span> <span class="n">PE</span> <span class="o">=</span> <span class="k">new</span> <span class="n">PotentialEnergyCalculator</span><span class="p">();</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Your potential energy in Joules is "</span> <span class="o">+</span> <span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">"%.2f"</span><span class="p">,</span> <span class="n">PE</span><span class="p">.</span><span class="na">calculate</span><span class="p">()));</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Your potential energy in Joules is "</span> <span class="o">+</span> <span class="n">String</span><span class="p">.</span><span class="na">format</span><span class="p">(</span><span class="s">"%.2f"</span><span class="p">,</span> <span class="n">PE</span><span class="p">.</span><span class="na">calculate</span><span class="p">()));</span> <span class="c1">// script for what the output will look like using string</span>
     <span class="p">}</span>
     
 <span class="p">}</span>
