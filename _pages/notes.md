@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: Notes and Big Ideas for CSA
 categories: [markdown]
-title: CSA Notes from Tech Talks + Website
+title: CSA Notes 
 ---
 
 # Fastpages Notes
