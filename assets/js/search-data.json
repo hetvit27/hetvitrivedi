@@ -2,6 +2,17 @@
   
     
         "post0": {
+            "title": "Title",
+            "content": "&gt; &quot;My Fahrenheit to Celsius calculator here showcases the basics of Primitives&quot; - toc:true - branch: master - badges: true - comments: true - author: Hetvi Trivedi - categories: [fastpages, jupyter] . import java.util.Scanner; //allows for user input public class FahrenheitCelsius { public static void main(String[] args) { String userInputStr; double fahrenheitdouble, celsiusdouble; Scanner inputStream = new Scanner(System.in); //creates area for input System.out.print(&quot;What is your Fahrenheit degrees? &quot;); userInputStr = inputStream.nextLine(); //assigns userinputstr as input fahrenheitdouble = Double.parseDouble(userInputStr); //changes to stored variable fahrenheitdouble System.out.print(fahrenheitdouble); celsiusdouble = (fahrenheitdouble-32)/1.8; //set celsius variable to conversion System.out.print(&quot; nCelsius conversion: &quot; ); //enter line and print celsius System.out.print(celsiusdouble); } } FahrenheitCelsius.main(null); . What is your Fahrenheit degrees? 30.0 Celsius conversion: -1.1111111111111112 .",
+            "url": "https://hetvit27.github.io/hetvitrivedi/2022/08/27/JavaPrimitives.html",
+            "relUrl": "/2022/08/27/JavaPrimitives.html",
+            "date": " • Aug 27, 2022"
+        }
+        
+    
+  
+    
+        ,"post1": {
             "title": "The Things I need to do!",
             "content": "Introduction . This is the page where I will keep track of my tasks for the week and also note the problems/solutions I encounter . Problems I faced . Computer Science is all about learning from errors and developing innovations. Here are some of the problems I’ve faced in my computer science journey: . Solutions to the problems . While problems are a must in life, solutions are also just a step away. For the problems I faced while coding, here are the solutions I pondered: . Reflection . From my problems and solutions, here’s what I learned: .",
             "url": "https://hetvit27.github.io/hetvitrivedi/markdown/2022/08/21/todolist.html",
@@ -12,7 +23,7 @@
     
   
     
-        ,"post1": {
+        ,"post2": {
             "title": "Issues Page w/ Solutions",
             "content": "AP CSA Issues . I’ve created a page with common issues that I’ve encountered while working and links to fixes that I have found. . Unresolved Issues . Issue title, Week #_ Link | . | . Resolved Issues . Issue title, Week #_ Link | . | . Any questions: . I can help with any of these issues via Slack! . Footnotes .",
             "url": "https://hetvit27.github.io/hetvitrivedi/markdown/2022/08/21/issuetracker.html",
@@ -23,7 +34,7 @@
     
   
     
-        ,"post2": {
+        ,"post3": {
             "title": "Python Jupyter Notebook",
             "content": "msg = &quot;Hi Hetvi&quot; print(msg) . Hi Hetvi .",
             "url": "https://hetvit27.github.io/hetvitrivedi/fastpages/jupyter/2022/08/21/PythonJupyterNotebook.html",
@@ -34,7 +45,7 @@
     
   
     
-        ,"post3": {
+        ,"post4": {
             "title": "Java Jupyter Notebook",
             "content": "System.out.println(&quot;Hello&quot;); . Hello .",
             "url": "https://hetvit27.github.io/hetvitrivedi/fastpages/jupyter/2022/08/21/JavaJupyterNotebook.html",
@@ -45,7 +56,7 @@
     
   
     
-        ,"post4": {
+        ,"post5": {
             "title": "My First Post!",
             "content": "Hi There! . This is my first post! I’m so excited to learn more about computer science with my class. .",
             "url": "https://hetvit27.github.io/hetvitrivedi/markdown/2022/08/21/Firstpost!.html",
