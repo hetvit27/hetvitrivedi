@@ -1,11 +1,8 @@
 ---
 layout: page
-title: About Me
+title: Who's Hetvi?🤨 
 permalink: /about/
 ---
 
-This website is powered by **[fastpages](https://github.com/fastai/fastpages)** [^1].
+My name is Hetvi and I'm a senior at Del Norte. I really love learning and being able to problem solve through using different resources and collaborating with my peers. This year my goals are to learn different programming language and to get to be creative with the projects I do. 
 
-
-
-[^1]:a blogging platform that natively supports Jupyter notebooks in addition to other formats.
