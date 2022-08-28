@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Title",
-            "content": "&gt; &quot;My Fahrenheit to Celsius calculator here showcases the basics of Primitives&quot; - toc:true - branch: master - badges: true - comments: true - author: Hetvi Trivedi - categories: [fastpages, jupyter] . import java.util.Scanner; //allows for user input public class FahrenheitCelsius { public static void main(String[] args) { String userInputStr; double fahrenheitdouble, celsiusdouble; Scanner inputStream = new Scanner(System.in); //creates area for input System.out.print(&quot;What is your Fahrenheit degrees? &quot;); userInputStr = inputStream.nextLine(); //assigns userinputstr as input fahrenheitdouble = Double.parseDouble(userInputStr); //changes to stored variable fahrenheitdouble System.out.print(fahrenheitdouble); celsiusdouble = (fahrenheitdouble-32)/1.8; //set celsius variable to conversion System.out.print(&quot; nCelsius conversion: &quot; ); //enter line and print celsius System.out.print(celsiusdouble); } } FahrenheitCelsius.main(null); . What is your Fahrenheit degrees? 30.0 Celsius conversion: -1.1111111111111112 .",
-            "url": "https://hetvit27.github.io/hetvitrivedi/2022/08/27/JavaPrimitives.html",
-            "relUrl": "/2022/08/27/JavaPrimitives.html",
+            "title": "JavaPrimitives",
+            "content": "import java.util.Scanner; //allows for user input public class FahrenheitCelsius { public static void main(String[] args) { String userInputStr; double fahrenheitdouble, celsiusdouble; Scanner inputStream = new Scanner(System.in); //creates area for input System.out.print(&quot;What is your Fahrenheit degrees? &quot;); userInputStr = inputStream.nextLine(); //assigns userinputstr as input fahrenheitdouble = Double.parseDouble(userInputStr); //changes to stored variable fahrenheitdouble System.out.print(fahrenheitdouble); celsiusdouble = (fahrenheitdouble-32)/1.8; //set celsius variable to conversion System.out.print(&quot; nCelsius conversion: &quot; ); //enter line and print celsius System.out.print(celsiusdouble); } } FahrenheitCelsius.main(null); . What is your Fahrenheit degrees? 30.0 Celsius conversion: -1.1111111111111112 .",
+            "url": "https://hetvit27.github.io/hetvitrivedi/fastpages/jupyter/2022/08/27/JavaPrimitives.html",
+            "relUrl": "/fastpages/jupyter/2022/08/27/JavaPrimitives.html",
             "date": " • Aug 27, 2022"
         }
         
