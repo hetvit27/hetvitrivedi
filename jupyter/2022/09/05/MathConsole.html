@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      6 min read
     
 </span></p>
 
@@ -128,6 +128,7 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1"><a href="#Console-Based-Menu">Console Based Menu </a></li>
+<li class="toc-entry toc-h1"><a href="#Desktop-GUI-Menu">Desktop GUI Menu </a></li>
 <li class="toc-entry toc-h1"><a href="#Hacks">Hacks </a></li>
 </ul><!--
 #################################################
@@ -144,7 +145,17 @@ window.onload = wrap_img;
 <h1 id="Console-Based-Menu">
 <a class="anchor" href="#Console-Based-Menu" aria-hidden="true"><span class="octicon octicon-link"></span></a>Console Based Menu<a class="anchor-link" href="#Console-Based-Menu"> </a>
 </h1>
-<p>The objects that I used include the java util scanner that takes an integer input from the user. I also used the system class for output to console that types out the user input option that's selected.</p>
+<p>Objects Used:</p>
+<ul>
+<li>Used scanner class to get user input and make objects</li>
+<li>Used system class to print out static methods- </li>
+<li>Used the java Math Class to calculate for GCM and LCM</li>
+</ul>
+<p>PBL Takeaways:</p>
+<ul>
+<li>By using the Menu () code, the user is able to select which option they want to start. This connects to Frontend because the code allows the program to be more user friendly. 
+-The user is entering what they want the code to process which is different than GUI console which allows the user to select and view different options</li>
+</ul>
 
 </div>
 </div>
@@ -349,10 +360,35 @@ The least common multiple of 2 and 4 is 4
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Desktop-GUI-Menu">
+<a class="anchor" href="#Desktop-GUI-Menu" aria-hidden="true"><span class="octicon octicon-link"></span></a>Desktop GUI Menu<a class="anchor-link" href="#Desktop-GUI-Menu"> </a>
+</h1>
+<p>See Brian and I's GUI Console that we put together: <a href="https://bgt072105.github.io/CSA-tri1-teamrepo/2022/09/04/GUImenu.html">https://bgt072105.github.io/CSA-tri1-teamrepo/2022/09/04/GUImenu.html</a></p>
+<p>Objects Used:
+-Used the if else, if else structure that allows text to show up based on what the user selects
+-Scanner class
+-Static variable since GUI doesn't allow inputs</p>
+<p>PBL Learnings:
+-Graphical User Interface allows for the user to click and navigate through the console based on what they want to see
+-More faster and easier to understand
+-More visual for the user compared to Console</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Hacks">
 <a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
 </h1>
-<p>Class is defined</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Explain where a Class is defined</p>
 
 </div>
 </div>
@@ -364,7 +400,9 @@ The least common multiple of 2 and 4 is 4
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Menu</span> <span class="p">{</span>
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// class definition</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Menu</span><span class="p">{</span>
+    
 <span class="p">}</span>
 </pre></div>
 
@@ -372,13 +410,29 @@ The least common multiple of 2 and 4 is 4
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">// class definition</span>
+<span class="ansi-red-intense-fg ansi-bold">a type with the same simple name is already defined by the single-type-import of java.util.Scanner</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The instance of the class is defined</p>
+<p>Explain where an instances of a Class is defined</p>
 
 </div>
 </div>
@@ -390,7 +444,8 @@ The least common multiple of 2 and 4 is 4
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="n">Menu</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// new instance of class (object)</span>
+<span class="k">new</span> <span class="n">Menu</span><span class="p">();</span>
 </pre></div>
 
     </div>
@@ -403,7 +458,100 @@ The least common multiple of 2 and 4 is 4
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Where an object is calling a method</p>
+<p>Explain where an object is Calling a Method</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// object calling method</span>
+
+<span class="kt">int</span> <span class="n">choice</span> <span class="o">=</span> <span class="n">sc</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>  <span class="c1">// sc object calls nextInt() method</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Explain where an object is Mutating data</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// mutating data refers to a change in the original data. Here, the primitive data type is number that is being mutated to create a least common multiple</span>
+<span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="n">num1</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+<span class="n">Scanner</span> <span class="n">num2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+<span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Enter another number: "</span><span class="p">);</span>
+<span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="n">num2</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+
+<span class="n">num1</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+<span class="n">num2</span><span class="p">.</span><span class="na">close</span><span class="p">();</span>
+
+<span class="kt">int</span> <span class="n">m</span> <span class="o">=</span> <span class="n">Math</span><span class="p">.</span><span class="na">max</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Describe Console, GUI differences, or Code.org differences.</p>
+<ul>
+<li>
+<p>Console:</p>
+<ul>
+<li>User enters inputs and get respective outputs</li>
+<li>Not as visual</li>
+<li>Requires very good understanding of script and syntax</li>
+<li>Example: Bash shell --&gt; inputs by user, outputs through the code </li>
+</ul>
+</li>
+<li>
+<p>GUI:</p>
+<ul>
+<li>More clickable platform </li>
+<li>Comfortable to use because it's user-friendly</li>
+<li>Visual feedback and display</li>
+<li>Can't really perform multiple tasks at once</li>
+<li>You can access another computer/platform remotely</li>
+<li>example: Apple's Macintosh operating system</li>
+</ul>
+</li>
+<li>
+<p>Code.org:</p>
+<ul>
+<li>Uses the painter as a visual object</li>
+<li>File and public class " name " should be same</li>
+<li>Public class was My Neighborhood same as what the file was named</li>
+<li>Calling a method is done through "variableName.methodName();</li>
+<li>More basic platform</li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div>
