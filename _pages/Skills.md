@@ -1,8 +1,8 @@
 ---
 layout: page
 title: My Skills 
-permalink: /about/
----
+permalink: 
+
 # Middle School Clubs
 - Heavily immersed in Science Olympiad where I explored a bunch of different fields like Anatomy, Experimental Design, Epidemiology, and Thermodynamics
 - I participated in Robotics until 6th grade and then never really tried again until 9th grade
