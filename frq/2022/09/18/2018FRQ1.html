@@ -257,13 +257,13 @@ of what you wrote in part (a). You must use simulate appropriately to receive fu
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kt">double</span> <span class="nf">runSimulation</span><span class="p">(</span><span class="kt">int</span> <span class="n">num</span><span class="p">)</span> <span class="c1">// int is the number of times we want to run the loop</span>
 <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">countSuccess</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">num</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span> 
         <span class="k">if</span> <span class="p">(</span><span class="n">simulate</span><span class="p">()){</span>
-            <span class="n">count</span><span class="o">++</span><span class="p">;</span> <span class="c1">// if it's successful, the hops will increase by 1</span>
+            <span class="n">countSuccess</span><span class="o">++</span><span class="p">;</span> <span class="c1">// if it's successful, the hops will increase by 1</span>
         <span class="p">}</span>
     <span class="p">}</span>
-    <span class="k">return</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">count</span> <span class="o">/</span> <span class="n">num</span><span class="p">;</span> <span class="c1">// gives a proportion of successes</span>
+    <span class="k">return</span> <span class="p">(</span><span class="kt">double</span><span class="p">)</span> <span class="n">countSuccess</span> <span class="o">/</span> <span class="n">num</span><span class="p">;</span> <span class="c1">// gives a proportion of successes</span>
 <span class="p">}</span>
 </pre></div>
 
