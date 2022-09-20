@@ -4,21 +4,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>What is a Method? | fastpages</title>
+<title>Methods in Java | fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="What is a Method?" />
+<meta property="og:title" content="Methods in Java" />
+<meta name="author" content="Hetvi Trivedi" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://hetvit27.github.io/hetvitrivedi/2022/09/19/Methods.html" />
-<meta property="og:url" content="https://hetvit27.github.io/hetvitrivedi/2022/09/19/Methods.html" />
+<meta name="description" content="Our group presentation on methods" />
+<meta property="og:description" content="Our group presentation on methods" />
+<link rel="canonical" href="https://hetvit27.github.io/hetvitrivedi/jupyter/2022/09/19/Methods.html" />
+<meta property="og:url" content="https://hetvit27.github.io/hetvitrivedi/jupyter/2022/09/19/Methods.html" />
 <meta property="og:site_name" content="fastpages" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-09-19T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="What is a Method?" />
+<meta property="twitter:title" content="Methods in Java" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-19T00:00:00-05:00","datePublished":"2022-09-19T00:00:00-05:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"What is a Method?","mainEntityOfPage":{"@type":"WebPage","@id":"https://hetvit27.github.io/hetvitrivedi/2022/09/19/Methods.html"},"url":"https://hetvit27.github.io/hetvitrivedi/2022/09/19/Methods.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Hetvi Trivedi"},"dateModified":"2022-09-19T00:00:00-05:00","datePublished":"2022-09-19T00:00:00-05:00","description":"Our group presentation on methods","headline":"Methods in Java","mainEntityOfPage":{"@type":"WebPage","@id":"https://hetvit27.github.io/hetvitrivedi/jupyter/2022/09/19/Methods.html"},"url":"https://hetvit27.github.io/hetvitrivedi/jupyter/2022/09/19/Methods.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/hetvitrivedi/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://hetvit27.github.io/hetvitrivedi/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/hetvitrivedi/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,9 +74,11 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">What is a Method?</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-19T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Methods in Java</h1><p class="page-description">Our group presentation on methods</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-19T00:00:00-05:00" itemprop="datePublished">
         Sep 19, 2022
-      </time>
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Hetvi Trivedi</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
@@ -83,6 +86,13 @@ window.onload = wrap_img;
     
 </span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/hetvitrivedi/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
     
 
     
@@ -116,7 +126,13 @@ window.onload = wrap_img;
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#What-is-a-Method?">What is a Method? </a></li>
+<li class="toc-entry toc-h1"><a href="#Creating-a-Method">Creating a Method </a></li>
+<li class="toc-entry toc-h1"><a href="#Example-Code">Example Code </a></li>
+<li class="toc-entry toc-h1"><a href="#Calling-a-Method">Calling a Method </a></li>
+<li class="toc-entry toc-h1"><a href="#Example-Code">Example Code </a></li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -125,9 +141,28 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Creating-a-Method">Creating a Method<a class="anchor-link" href="#Creating-a-Method"> </a></h1><ul>
+<h1 id="What-is-a-Method?">
+<a class="anchor" href="#What-is-a-Method?" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is a Method?<a class="anchor-link" href="#What-is-a-Method?"> </a>
+</h1>
+<ul>
+<li>Function or sub-code that is associated with a class in object-oriented programming</li>
+<li>Can contain a set of codes that performs an action</li>
+<li>It can also take an input and return an output based on the user</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Creating-a-Method">
+<a class="anchor" href="#Creating-a-Method" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating a Method<a class="anchor-link" href="#Creating-a-Method"> </a>
+</h1>
+<ul>
 <li>A method is created within a class</li>
 <li>It is defined with the name, followed by ()</li>
 <li>An example of a Java pre-defined method is System.out.println()</li>
@@ -136,9 +171,12 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Example-Code">Example Code<a class="anchor-link" href="#Example-Code"> </a></h1>
+<h1 id="Example-Code">
+<a class="anchor" href="#Example-Code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example Code<a class="anchor-link" href="#Example-Code"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -151,7 +189,7 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
     <span class="kd">static</span> <span class="kt">void</span> <span class="nf">ExampleMethod</span><span class="p">(){</span> <span class="c1">// ExampleMethod is the name of the method; static means that the method belongs to the Main class and not an object</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hi!&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Hi!"</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -163,18 +201,25 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Calling-a-Method">Calling a Method<a class="anchor-link" href="#Calling-a-Method"> </a></h1><ul>
+<h1 id="Calling-a-Method">
+<a class="anchor" href="#Calling-a-Method" aria-hidden="true"><span class="octicon octicon-link"></span></a>Calling a Method<a class="anchor-link" href="#Calling-a-Method"> </a>
+</h1>
+<ul>
 <li>With Java, you can call a method by writing the method's name and then having (); after it</li>
 </ul>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Example-Code">Example Code<a class="anchor-link" href="#Example-Code"> </a></h1>
+<h1 id="Example-Code">
+<a class="anchor" href="#Example-Code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example Code<a class="anchor-link" href="#Example-Code"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -187,7 +232,7 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
     <span class="kd">static</span> <span class="kt">void</span> <span class="nf">ExampleMethod</span><span class="p">()</span> <span class="p">{</span>
-      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hello AP CSA!&quot;</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Hello AP CSA!"</span><span class="p">);</span>
     <span class="p">}</span>
   
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
@@ -195,7 +240,7 @@ window.onload = wrap_img;
     <span class="p">}</span>
   <span class="p">}</span>
   
-  <span class="c1">// Outputs &quot;I just got executed!&quot;</span>
+  <span class="c1">// Outputs "I just got executed!"</span>
 </pre></div>
 
     </div>
@@ -209,7 +254,15 @@ window.onload = wrap_img;
 
 
 
-  </div><a class="u-url" href="/hetvitrivedi/2022/09/19/Methods.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="hetvit27/hetvitrivedi"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/hetvitrivedi/jupyter/2022/09/19/Methods.html" hidden></a>
 </article>
 
       </div>
