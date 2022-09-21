@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -127,8 +127,8 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h1"><a href="#Part-A">Part A </a></li>
-<li class="toc-entry toc-h1"><a href="#Part-B">Part B </a></li>
+<li class="toc-entry toc-h1"><a href="#Part-A-and-Explanation">Part A and Explanation </a></li>
+<li class="toc-entry toc-h1"><a href="#Part-B-and-Explanation">Part B and Explanation </a></li>
 <li class="toc-entry toc-h1"><a href="#Scoring-Guidelines">Scoring Guidelines </a></li>
 </ul><!--
 #################################################
@@ -190,8 +190,8 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Part-A">
-<a class="anchor" href="#Part-A" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part A<a class="anchor-link" href="#Part-A"> </a>
+<h1 id="Part-A-and-Explanation">
+<a class="anchor" href="#Part-A-and-Explanation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part A and Explanation<a class="anchor-link" href="#Part-A-and-Explanation"> </a>
 </h1>
 <p>Write the simulate method, which simulates the frog attempting to hop in a straight line to a goal from
 the frog's starting position of 0 within a maximum number of hops. The method returns true if the frog
@@ -236,8 +236,25 @@ successfully reached the goal within the maximum number of hops; otherwise, the 
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Part-B">
-<a class="anchor" href="#Part-B" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part B<a class="anchor-link" href="#Part-B"> </a>
+<ul>
+<li>Keep track of position and set starting position as zero </li>
+<li>We have to track this position through a "for" loop that is initially 0 and go to our maximum number of hops </li>
+<li>We need to have a code that adds hop distance to our position </li>
+<li>Things that will stop the code: if we have reached the maximum number of hops OR if the position is = goal distance</li>
+<li>Using the "if/else if" statements, if the position is greater than or equal to the goal Distance, the code will be true</li>
+<li>However, if our position is negative, we want to return false</li>
+<li>If neither true or false occurs, the code will run until we reach maximum number of hops </li>
+<li>Starting count at 0 and keeps going until frog reaches goal distance (true) or negative position (false) or reaches maximum number of hops (false)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Part-B-and-Explanation">
+<a class="anchor" href="#Part-B-and-Explanation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part B and Explanation<a class="anchor-link" href="#Part-B-and-Explanation"> </a>
 </h1>
 <p>Write the runSimulations method, which performs a given number of simulations and returns the
 proportion of simulations in which the frog successfully reached or passed the goal. For example, if the
@@ -259,7 +276,7 @@ of what you wrote in part (a). You must use simulate appropriately to receive fu
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kt">double</span> <span class="nf">runSimulation</span><span class="p">(</span><span class="kt">int</span> <span class="n">num</span><span class="p">)</span> <span class="c1">// int is the number of times we want to run the loop; called simulate method</span>
 <span class="p">{</span>
     <span class="kt">int</span> <span class="n">countSuccess</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">num</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span> 
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">num</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>  <span class="c1">// keeps track of the counts so far</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">simulate</span><span class="p">()){</span>
             <span class="n">countSuccess</span><span class="o">++</span><span class="p">;</span> <span class="c1">// if it's successful, the hops will increase by 1</span>
         <span class="p">}</span>
@@ -275,6 +292,21 @@ of what you wrote in part (a). You must use simulate appropriately to receive fu
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Need to declare a double and start it at zero </li>
+<li>We need to keep track of runs</li>
+<li>Simulate is a boolean function that returns true or false</li>
+<li>If true, then I want to increase the number of successes</li>
+<li>If false, then the run is a fail </li>
+<li>At the end, I want to return successes/# of simulations for the frog</li>
+</ul>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
