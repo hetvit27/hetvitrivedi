@@ -80,9 +80,19 @@ window.onload = wrap_img;
         <br>
         Number 2: <input type="text" name="txtnum2">
         <br>
-        Result: <input type="text" name="txtres">
+        Result: <input type="text" name="txtres"><br>
         <input type="button" value="Calculate" onclick="sumValues()"> 
     </form>
+    <script type="text/javascript">
+        function sumValues()
+        {
+            var num1, num1, res;
+            num1=Number(document.formcalc.txtnum1.value);
+            num2=Number(document.formcalc.txtnum2.value);
+            res=num1+num2;
+            document.formcalc.txtres.value=res;
+        }
+    </script>
 </body>
 </html>
 
