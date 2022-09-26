@@ -66,7 +66,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/hetvitrivedi/_pages/Skills.html">Skills!</a><a class="page-link" href="/hetvitrivedi/about/">Who&#39;s Hetvi?🤨</a><a class="page-link" href="/hetvitrivedi/median%20calculator/">Calculator</a><a class="page-link" href="/hetvitrivedi/_pages/notes.html">CSA Notes</a><a class="page-link" href="/hetvitrivedi/search%20Hetvi's%20fastpages/">Search</a><a class="page-link" href="/hetvitrivedi/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/hetvitrivedi/_pages/Skills.html">Skills!</a><a class="page-link" href="/hetvitrivedi/about/">Who&#39;s Hetvi?🤨</a><a class="page-link" href="/hetvitrivedi/calculator/">Calculator</a><a class="page-link" href="/hetvitrivedi/_pages/notes.html">CSA Notes</a><a class="page-link" href="/hetvitrivedi/search%20Hetvi's%20fastpages/">Search</a><a class="page-link" href="/hetvitrivedi/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -402,6 +402,81 @@ string ; {"name":"Mr M","ghID":"jm1021","classOf":1977,"role":"Teacher"}
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-javascript"><pre><span></span><span class="c1">//logging function</span>
+<span class="kd">function</span> <span class="nx">logIt</span><span class="p">(</span><span class="nx">output</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">output</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// define a function to hold data for a Person</span>
+<span class="kd">function</span> <span class="nx">Name</span><span class="p">(</span><span class="nx">age</span><span class="p">,</span> <span class="nx">grade</span><span class="p">,</span> <span class="nx">hobbies</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">grade</span> <span class="o">=</span> <span class="nx">grade</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">hobbies</span> <span class="o">=</span> <span class="nx">hobbies</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">role</span> <span class="o">=</span> <span class="s2">""</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// define a setter for role in Person data</span>
+<span class="nx">Name</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">setRole</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">role</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">role</span> <span class="o">=</span> <span class="nx">role</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// define a JSON conversion "method" associated with Person</span>
+<span class="nx">Name</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toJSON</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kr">const</span> <span class="nx">obj</span> <span class="o">=</span> <span class="p">{</span><span class="nx">age</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="p">,</span> <span class="nx">grade</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">grade</span><span class="p">,</span> <span class="nx">hobbies</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">hobbies</span><span class="p">,</span> <span class="nx">role</span><span class="o">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">role</span><span class="p">};</span>
+    <span class="kr">const</span> <span class="nx">json</span> <span class="o">=</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">obj</span><span class="p">);</span>  <span class="c1">// json/string is useful when passing data on internet</span>
+    <span class="k">return</span> <span class="nx">json</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// make a new Person and assign to variable teacher</span>
+<span class="kd">var</span> <span class="nx">SoccerCaptain</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Member</span><span class="p">(</span><span class="s2">"Shree Mehta"</span><span class="p">,</span> <span class="s2">"12th"</span><span class="p">,</span> <span class="p">[</span><span class="s2">"Dancing"</span><span class="p">,</span> <span class="s2">"Going to the beach"</span><span class="p">,</span> <span class="s2">"Painting"</span><span class="p">]);</span>  <span class="c1">// object type is easy to work with in JavaScript</span>
+<span class="nx">logItType</span><span class="p">(</span><span class="nx">SoccerCaptain</span><span class="p">);</span>  <span class="c1">// before role</span>
+<span class="nx">logItType</span><span class="p">(</span><span class="nx">SoccerCaptain</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">());</span>  <span class="c1">// ok to do this even though role is not yet defined</span>
+
+<span class="c1">// output of Object and JSON/string associated with Teacher</span>
+<span class="nx">SoccerCaptain</span><span class="p">.</span><span class="nx">setRole</span><span class="p">(</span><span class="s2">"Soccer Captain"</span><span class="p">);</span>   <span class="c1">// set the role</span>
+<span class="nx">logItType</span><span class="p">(</span><span class="nx">SoccerCaptain</span><span class="p">);</span> 
+<span class="nx">logItType</span><span class="p">(</span><span class="nx">SoccerCaptain</span><span class="p">.</span><span class="nx">toJSON</span><span class="p">());</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>object ; Member {
+  name: 'Shree Mehta',
+  grade: '12th',
+  events: [ 'Dancing', 'Going to the beach', 'Painting' ],
+  role: '' }
+string ; {"name":"Shree Mehta","grade":"12th","events":["Dancing","Going to the beach","Painting"],"role":""}
+object ; Member {
+  name: 'Shree Mehta',
+  grade: '12th',
+  events: [ 'Dancing', 'Going to the beach', 'Painting' ],
+  role: 'Soccer Captain' }
+string ; {"name":"Shree Mehta","grade":"12th","events":["Dancing","Going to the beach","Painting"],"role":"Soccer Captain"}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
