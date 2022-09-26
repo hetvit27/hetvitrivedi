@@ -4,20 +4,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>fastpages | An easy to use blogging platform with support for Jupyter Notebooks.</title>
+<title>Median Calulator | fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="fastpages" />
+<meta property="og:title" content="Median Calulator" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
 <meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://hetvit27.github.io/hetvitrivedi/404.html" />
-<meta property="og:url" content="https://hetvit27.github.io/hetvitrivedi/404.html" />
+<link rel="canonical" href="https://hetvit27.github.io/hetvitrivedi/median%20calculator/" />
+<meta property="og:url" content="https://hetvit27.github.io/hetvitrivedi/median%20calculator/" />
 <meta property="og:site_name" content="fastpages" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="fastpages" />
+<meta property="twitter:title" content="Median Calulator" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"fastpages","url":"https://hetvit27.github.io/hetvitrivedi/404.html"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"Median Calulator","url":"https://hetvit27.github.io/hetvitrivedi/median%20calculator/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/hetvitrivedi/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://hetvit27.github.io/hetvitrivedi/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/hetvitrivedi/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -69,25 +69,78 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
+        <!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+<script type="text/javascript">
+function mean(numbers) {
+  // mean of [3, 5, 4, 4, 1, 1, 2, 3] is 2.875
+  var total = 0,
+      i;
+  for (i = 0; i < numbers.length; i += 1) {
+      total += numbers[i];
   }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
+  return total / numbers.length;
+}
+function median(numbers) {
+  // median of [3, 5, 4, 4, 1, 1, 2, 3] = 3
+  var median = 0,
+      numsLen = numbers.length;
+  numbers.sort();
+  if (numsLen % 2 === 0) { // is even
+      // average of two middle numbers
+      median = (numbers[numsLen / 2 - 1] + numbers[numsLen / 2]) / 2;
+  } else { // is odd
+      // middle number only
+      median = numbers[(numsLen - 1) / 2];
   }
-</style>
+  return median;
+}
+function mode(numbers) {
+  // as result can be bimodal or multimodal,
+  // the returned result is provided as an array
+  // mode of [3, 5, 4, 4, 1, 1, 2, 3] = [1, 3, 4]
+  var modes = [],
+      count = [],
+      i,
+      number,
+      maxIndex = 0;
+  for (i = 0; i < numbers.length; i += 1) {
+      number = numbers[i];
+      count[number] = (count[number] || 0) + 1;
+      if (count[number] > maxIndex) {
+          maxIndex = count[number];
+      }
+  }
+  for (i in count) if (count.hasOwnProperty(i)) {
+      if (count[i] === maxIndex) {
+          modes.push(Number(i));
+      }
+  }
+  return modes;
+}
+function range(numbers) {
+  // range of [3, 5, 4, 4, 1, 1, 2, 3] is [1, 5]
+  numbers.sort();
+  return [numbers[0], numbers[numbers.length - 1]];
+}
 
-<div class="container">
-  <h1>404</h1>
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
+var data = [3, 5, 4, 4, 1, 1, 2, 3];
+console.log(mean(data));
+console.log(median(data));
+console.log(mode(data));
+console.log(range(data));
+</script>
+</body>
+</html>
+1 Reply
+
+
+
 
       </div>
     </main><footer class="site-footer h-card">
