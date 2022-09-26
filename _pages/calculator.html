@@ -7,33 +7,116 @@ search_exclude: true
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    
+  
 </body>
-</html>DOCTYPE html>  
+</html> DOCTYPE html>  
 <html>  
     <head>  
     <meta charset="utf-8">  
     <title>  
-         Calculator using HTML  
+         Calculator using HTML Example  
     </title>  
     <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">  
     <!-- CSS property to create interactive  
         calculator interface -->  
     <style>  
-    html {  
+        * {  
+  box-sizing: border-box;  
+  font-family: 'Roboto', sans-serif;  
+}  
+body {  
+  background: black;  
+}  
+.container {  
+  width: auto;  
+  margin: 20px;  
+  color:black;  
+}  
+.calc-body {  
+  width: 275px;  
+  margin: auto;  
+  min-height: 400px;  
+  border: solid 1px #3A4655;  
+  box-shadow: 0 8px 50px -7px black;  
+}  
+.calc-screen {  
+  background: #3A4655;  
+  width: 100%;  
+  height: 150px;  
+  padding: 20px;  
+}  
+.calc-operation {  
+  text-align: right;  
+  color: #727B86;  
+  font-size: 21px;  
+  padding-bottom: 10px;  
+  border-bottom: dotted 1px;  
+}  
+.calc-typed {  
+  margin-top: 20px;  
+  font-size: 45px;  
+  text-align: right;  
+  color: #fff;  
+}  
+.calc-button-row {  
+  width: 100%;  
+  background: #3C4857;  
+}  
+.button {  
+  width: 25%;  
+  background: #425062;  
+  color: #fff;  
+  padding: 20px;  
+  display: inline-block;  
+  font-size: 25px;  
+  text-align: center;  
+  vertical-align: middle;  
+  margin-right: -4px;  
+  border-right: solid 2px #3C4857;  
+  border-bottom: solid 2px #3C4857;  
+  transition: all 0.2s ease-in-out;  
+}  
+.button.l {  
+  color: #AEB3BA;  
+  background: #404D5E;  
+}  
+.button.c {  
+  color: #D95D4E;  
+  background: #404D5E;  
+}  
+.button:hover {  
+  background: #E0B612;  
+  transform: rotate(5deg);  
+}  
+.button.c:hover {  
+  background: #E0B612;  
+  color: #fff;  
+}  
+.button.l:hover {  
+  background: #E0B612;  
+  color: #fff;  
+}  
+.blink-me {  
+  color: #E0B612;  
+}  
+html {  
   height: 100vh;  
   display: flex;  
   align-items: center;  
   justify-content: center;  
   background-color: #2d3436;  
-  background-image: linear-gradient(315deg, #362d2d 0%, #000000 74%);  
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);  
   font-family: 'Cookie', cursive;  
+}  
+.title:hover {  
+  background: #E0B612;  
+  color: #fff;  
 }  
 .title {  
 margin-bottom: 10px;  
@@ -41,7 +124,7 @@ padding: 5px 0;
 font-size: 40px;  
 font-weight: bold;  
 text-align: center;  
-color: olive;  
+color: #AEB3BA;  
 font-family: 'Cookie', cursive;  
 }  
 input[type=button] {  
@@ -68,7 +151,7 @@ input[type=text] {
   box-sizing: border-box;  
   border: none;  
   background: none;  
-  color: olive;  
+  color: red;  
   text-align: right;  
   font-weight: 700;  
   font-size: 60px;  
@@ -80,67 +163,48 @@ input[type=text] {
   box-shadow: 0px 0px 0px 10px #666;  
   border: 5px solid black;  
   border-radius: 10px;  
-}  
-#display {  
-  height: 40px;  
-  text-align: right;  
-  background-color: black;  
-  border: 3px solid white;  
-  font-size: 18px;  
-  left: 2px;  
-  top: 2px;  
-  color: olive;  
-}  
-.btnTop {  
-  color: white;  
-  background-color: #6f6f6f;  
-  font-size: 14px;  
-  margin: auto;  
-  width: 50px;  
-  height: 25px;  
 }     
-    </style>  
+</style>  
 </head>  
 <body>  
-    <div class = "title"  align="center">  
-        Example of Calculator using HTML  
+    <div class="container">  
+  <div class="calc-body">  
+    <div class="calc-screen">  
+      <div class="calc-operation"> 25 + 10 = </div>  
+      <div class="calc-typed"> 35 <span class="blink-me"> _ </span> </div>  
     </div>  
-    <form name="Calculator" class = "calculator" >  
-<table border="2" align="center" cellpadding="15" cellspacing="12" bgcolor="#c0c0c0">  
-<tr>  
-<td>  
-<input type="text" name="Input" Size="35" id="display">  
-<br>  
-</td>  
-</tr>  
-<tr>  
-<td>  
-<input type="button" name = "one" style="font-size:30px" value=" 1 " OnClick="Calculator.Input.value += '1'">  
-<input type="button" name = "two" style = "font-size:30px" value=" 2 " OnCLick="Calculator.Input.value += '2'">  
-<input type="button" name = "three" style="font-size:30px" value=" 3 " OnClick="Calculator.Input.value += '3'">  
-<br> 
-<input type="button" name = "four" style="font-size:30px" value=" 4 " OnClick="Calculator.Input.value += '4'">  
-<input type="button" name = "five" style="font-size:30px" value=" 5 " OnCLick="Calculator.Input.value += '5'">  
-<input type="button" name = "six" style="font-size:30px" value=" 6 " OnClick="Calculator.Input.value += '6'">  
-<br> 
-<input type="button" name = "seven" style="font-size:30px" value=" 7 " OnClick="Calculator.Input.value += '7'">  
-<input type="button" name = "eight" style="font-size:30px" value=" 8 " OnCLick="Calculator.Input.value += '8'">  
-<input type="button" name = "nine" style="font-size:30px" value=" 9 " OnClick="Calculator.Input.value += '9'">  
-<br> 
-<input type="button" name="add" class ="btnTop" style="font-size:30px" value=" + " OnClick="Calculator.Input.value += ' + '">  
-<input type="button" name = "minus" style="font-size:30px" value=" - " OnClick="Calculator.Input.value += ' - '">  
-<input type="button" name = "mul" style="font-size:30px" value=" * " 
-  OnClick="Calculator.Input.value += ' * '">  
-<br>  
-<input type="button" name = "clear" style="font-size:30px" value=" c " OnClick="Calculator.Input.value = ''">  
-<input type="button" name="zero" style="font-size:30px" value=" 0 " OnClick="Calculator.Input.value += '0'">  
-<input type="button" name="DoIt" style="font-size:30px" value=" = " OnClick="Calculator.Input.value = eval(Calculator.Input.value)">  
-<input type="button" name="div" style="font-size:30px" value=" / " OnClick="Calculator.Input.value += ' / '">  
-<br>  
-</td>  
-  
-</tr>  
-</table>  
-</form>  
+    <div class="calc-button-row">  
+      <div class="button c"> C </div>  
+      <div class="button l"> ? </div>  
+      <div class="button l"> % </div>  
+      <div class="button l"> / </div>  
+    </div>  
+    <div class="calc-button-row">  
+      <div class="button"> 7 </div>  
+      <div class="button"> 8 </div>  
+      <div class="button"> 9 </div>  
+      <div class="button l"> x </div>  
+    </div>  
+    <div class="calc-button-row">  
+      <div class="button"> 4 </div>  
+      <div class="button"> 5 </div>  
+      <div class="button"> 6 </div>  
+      <div class="button l"> ? </div>  
+    </div>  
+    <div class="calc-button-row">  
+      <div class="button"> 1 </div>  
+      <div class="button"> 2 </div>  
+      <div class="button"> 3 </div>  
+      <div class="button l"> + </div>  
+    </div>  
+    <div class="calc-button-row">  
+      <div class="button"> . </div>  
+      <div class="button"> 0 </div>  
+      <div class="button">  
+        < </div>  
+          <div class="button l"> = </div>  
+      </div>  
+    </div>  
+  </div>  
 </body>  
-</html>     
+</html>  
