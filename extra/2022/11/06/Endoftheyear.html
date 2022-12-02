@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -209,6 +209,8 @@ window.onload = wrap_img;
 <li>Primitive wrapper objects or string objects are immutable so the methods can't change</li>
 <li>Boolean, char, int, float, double are all primitive data types</li>
 <li>String, Array, etc. are non-primitive data types</li>
+<li>
+<code>String class</code> are unable to be changed</li>
 <li>Learned to declare a variable that can be accessible and/or changed</li>
 <li>Learned how to store data as variables</li>
 <li>(=) is used to initialize variables or change its associated value</li>
@@ -291,6 +293,8 @@ window.onload = wrap_img;
 <code>static methods</code> are a part of a class instead of an instance of a class which is why it's in a bracket in the class </li>
 <li>
 <code>class methods</code> were just like in Code.org lessons</li>
+<li>
+<code>math classes</code> are static that directly invoke methods</li>
 </ul>
 
 </div>
@@ -330,6 +334,80 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Objects are not equal, hence it's false
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">JavaMathExample1</span>    
+<span class="p">{</span>    
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span>     
+    <span class="p">{</span>    
+        <span class="kt">double</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">28</span><span class="p">;</span>    
+        <span class="kt">double</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span>    
+          
+        <span class="c1">// return the maximum of two numbers  </span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Maximum number of x and y is: "</span> <span class="o">+</span><span class="n">Math</span><span class="p">.</span><span class="na">max</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">));</span>   
+          
+        <span class="c1">// return the square root of y   </span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Square root of y is: "</span> <span class="o">+</span> <span class="n">Math</span><span class="p">.</span><span class="na">sqrt</span><span class="p">(</span><span class="n">y</span><span class="p">));</span>   
+          
+        <span class="c1">//returns 28 power of 4 i.e. 28*28*28*28    </span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Power of x and y is: "</span> <span class="o">+</span> <span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">));</span>      
+  
+        <span class="c1">// return the logarithm of given value       </span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Logarithm of x is: "</span> <span class="o">+</span> <span class="n">Math</span><span class="p">.</span><span class="na">log</span><span class="p">(</span><span class="n">x</span><span class="p">));</span>   
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Logarithm of y is: "</span> <span class="o">+</span> <span class="n">Math</span><span class="p">.</span><span class="na">log</span><span class="p">(</span><span class="n">y</span><span class="p">));</span>  
+          
+        <span class="c1">// return the logarithm of given value when base is 10      </span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"log10 of x is: "</span> <span class="o">+</span> <span class="n">Math</span><span class="p">.</span><span class="na">log10</span><span class="p">(</span><span class="n">x</span><span class="p">));</span>   
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"log10 of y is: "</span> <span class="o">+</span> <span class="n">Math</span><span class="p">.</span><span class="na">log10</span><span class="p">(</span><span class="n">y</span><span class="p">));</span>    
+          
+        <span class="c1">// return the log of x + 1  </span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"log1p of x is: "</span> <span class="o">+</span><span class="n">Math</span><span class="p">.</span><span class="na">log1p</span><span class="p">(</span><span class="n">x</span><span class="p">));</span>    
+  
+        <span class="c1">// return a power of 2    </span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"exp of a is: "</span> <span class="o">+</span><span class="n">Math</span><span class="p">.</span><span class="na">exp</span><span class="p">(</span><span class="n">x</span><span class="p">));</span>    
+          
+        <span class="c1">// return (a power of 2)-1  </span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"expm1 of a is: "</span> <span class="o">+</span><span class="n">Math</span><span class="p">.</span><span class="na">expm1</span><span class="p">(</span><span class="n">x</span><span class="p">));</span>  
+    <span class="p">}</span>    
+<span class="p">}</span>  
+<span class="n">JavaMathExample1</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Maximum number of x and y is: 28.0
+Square root of y is: 2.0
+Power of x and y is: 614656.0
+Logarithm of x is: 3.332204510175204
+Logarithm of y is: 1.3862943611198906
+log10 of x is: 1.4471580313422192
+log10 of y is: 0.6020599913279624
+log1p of x is: 3.367295829986474
+exp of a is: 1.446257064291475E12
+expm1 of a is: 1.446257064290475E12
 </pre>
 </div>
 </div>
