@@ -4,21 +4,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>10.2 Recursive Searching and Sorting | fastpages</title>
+<title>Unit 10 Recursion Grading | fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="10.2 Recursive Searching and Sorting" />
+<meta property="og:title" content="Unit 10 Recursion Grading" />
+<meta name="author" content="Hetvi Trivedi" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<meta property="og:description" content="An easy to use blogging platform with support for Jupyter Notebooks." />
-<link rel="canonical" href="https://hetvit27.github.io/hetvitrivedi/2022/12/06/Recursion.html" />
-<meta property="og:url" content="https://hetvit27.github.io/hetvitrivedi/2022/12/06/Recursion.html" />
+<meta name="description" content="Scores + MC Explained" />
+<meta property="og:description" content="Scores + MC Explained" />
+<link rel="canonical" href="https://hetvit27.github.io/hetvitrivedi/collegeboard/2022/12/06/Recursion.html" />
+<meta property="og:url" content="https://hetvit27.github.io/hetvitrivedi/collegeboard/2022/12/06/Recursion.html" />
 <meta property="og:site_name" content="fastpages" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-12-06T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="10.2 Recursive Searching and Sorting" />
+<meta property="twitter:title" content="Unit 10 Recursion Grading" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-06T00:00:00-06:00","datePublished":"2022-12-06T00:00:00-06:00","description":"An easy to use blogging platform with support for Jupyter Notebooks.","headline":"10.2 Recursive Searching and Sorting","mainEntityOfPage":{"@type":"WebPage","@id":"https://hetvit27.github.io/hetvitrivedi/2022/12/06/Recursion.html"},"url":"https://hetvit27.github.io/hetvitrivedi/2022/12/06/Recursion.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Hetvi Trivedi"},"dateModified":"2022-12-06T00:00:00-06:00","datePublished":"2022-12-06T00:00:00-06:00","description":"Scores + MC Explained","headline":"Unit 10 Recursion Grading","mainEntityOfPage":{"@type":"WebPage","@id":"https://hetvit27.github.io/hetvitrivedi/collegeboard/2022/12/06/Recursion.html"},"url":"https://hetvit27.github.io/hetvitrivedi/collegeboard/2022/12/06/Recursion.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/hetvitrivedi/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://hetvit27.github.io/hetvitrivedi/feed.xml" title="fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/hetvitrivedi/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,9 +74,11 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">10.2 Recursive Searching and Sorting</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-06T00:00:00-06:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Unit 10 Recursion Grading</h1><p class="page-description">Scores + MC Explained</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-06T00:00:00-06:00" itemprop="datePublished">
         Dec 6, 2022
-      </time>
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Hetvi Trivedi</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
@@ -83,6 +86,13 @@ window.onload = wrap_img;
     
 </span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/hetvitrivedi/categories/#collegeboard">collegeboard</a>
+        
+      
+      </p>
     
 
     
@@ -116,7 +126,10 @@ window.onload = wrap_img;
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Scores">Scores </a></li>
+<li class="toc-entry toc-h1"><a href="#MC-Explanations">MC Explanations </a></li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -125,32 +138,103 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Lesson-Purpose-and-Objectives">Lesson Purpose and Objectives<a class="anchor-link" href="#Lesson-Purpose-and-Objectives"> </a></h2><ul>
-<li>Learn about how to write simple recursive methods and determine the purpose or output of a recursive method by tracing</li>
-<li>Determine the result of recursive method calls </li>
-<li>Primarily on the multiple choice section; students asked to determine result or describe the behavior of a recursive method</li>
-<li>5 to 7.5% exam weighting </li>
-</ul>
+<h1 id="Scores">
+<a class="anchor" href="#Scores" aria-hidden="true"><span class="octicon octicon-link"></span></a>Scores<a class="anchor-link" href="#Scores"> </a>
+</h1>
+<table>
+<thead>
+<tr>
+<th>Names</th>
+<th>Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bailey Say, Andrew Meng, Aarav Arora, Nicholas Mounier, Rohan Juneja</td>
+<td>1/1</td>
+</tr>
+<tr>
+<td>Kian Pasokhi</td>
+<td>1/1</td>
+</tr>
+<tr>
+<td>Everitt, Samuel, Kinish, Ritvik</td>
+<td>1/1</td>
+</tr>
+<tr>
+<td>Bria Gilliam, Shraddha Kadaba, Evan Sanchez, Calissa Tyrrell</td>
+<td>1/1</td>
+</tr>
+<tr>
+<td>Iris</td>
+<td>1/1</td>
+</tr>
+<tr>
+<td>Evan Yang, Karthik V, Sanjay B, Pranav S, Jay M.</td>
+<td>0.95/1  because missed one MC question</td>
+</tr>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+<tr>
+<td>Header</td>
+<td>Title</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="10.1-Recursion">10.1 Recursion<a class="anchor-link" href="#10.1-Recursion"> </a></h2><ul>
-<li>A recursive method is a method that calls itself</li>
-<li>Contain at least one base case, which halts the recursion, and at least one recursive call</li>
-<li>Each call has its own set of local variables</li>
-<li>Parameter values capture the progress of
-a recursive process, much like loop control
-variable values capture the progress of a loop</li>
-<li>Any recursive solution can be replicated
-through the use of an iterative approach</li>
-<li>Writing code is not apart of the curriculum </li>
-<li>Recursion can be used to traverse String, array, and ArrayList objects</li>
-</ul>
+<h1 id="MC-Explanations">
+<a class="anchor" href="#MC-Explanations" aria-hidden="true"><span class="octicon octicon-link"></span></a>MC Explanations<a class="anchor-link" href="#MC-Explanations"> </a>
+</h1>
+<ol>
+<li>
+<p>In the first function call, 2 + dosomething(2,2). In the second call, 2+2+ dosomething (2,1). Then, base condition is met: 2+2+2 = 6</p>
+</li>
+<li>
+<li>
+<p>Recursion uses more memory than iteration because in recursion, each function call is stored in a call stack.</p>
+</li>
+<li>
+<p>Recursion can be written as loops - therefore, most similar to loops. See presentation.</p>
+</li>
+<li>
+<p>Base case is when the recursive method is stopped and a value is returned.</p>
+</li>
+<li>
+<p>The answer is 24. The recursive method will terminate when either b &lt;= 1 or b &lt;= a.  In these two cases, it will return 1. 
+Do traces of the calls:</p>
+<p>foo(5,9) = (9-5) <em> foo(5,8) = 4 </em> foo(5,8)</p>
+<p>foo(5,8) = (8-5) <em> foo(5,7) = 3 </em> foo(5,7)</p>
+<p>foo(5,7) = (7-5) <em> foo(5,6) = 2 </em> foo(5,6)</p>
+<p>foo(5,6) = (6-5) <em> foo(5,5) = 1 </em> foo(5,5)</p>
+<p>foo(5,5) = 1</p>
+<p>Therefore, carefully tracing back up, we get:
+ foo(5,9) = 4 <em> 3 </em> 2 <em> 1 </em> 1 = 24</p>
+</li>
+<li>
+<p>The number 10 is inputed into recurs and prints count, subtracts two from count, then reentered into recurs. First iteration gives 10. The second iteration gives as, 10, 8. It places 8 after the value from the first iteration. Repeating this, we get 10 8 6 4 2. When count reaches 0, nothing is printed.</p>
+</li>
+<li>
+<p>Fibonacci is an example of iteration. Think back to Trimester 1.</p>
+</li>
+<li>
+<p>A recursive method calls itself within the method.</p>
+</li>
+</ol>
 
 </div>
 </div>
@@ -159,7 +243,15 @@ through the use of an iterative approach</li>
 
 
 
-  </div><a class="u-url" href="/hetvitrivedi/2022/12/06/Recursion.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="hetvit27/hetvitrivedi"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/hetvitrivedi/collegeboard/2022/12/06/Recursion.html" hidden></a>
 </article>
 
       </div>
