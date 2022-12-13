@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -154,27 +154,27 @@ window.onload = wrap_img;
 <tbody>
 <tr>
 <td>Bailey Say, Andrew Meng, Aarav Arora, Nicholas Mounier, Rohan Juneja</td>
-<td>1/1</td>
+<td>1/1 full score on MC + good implementation of recursion in code</td>
 </tr>
 <tr>
 <td>Kian Pasokhi</td>
-<td>1/1</td>
+<td>1/1 full score on MC + good implementation of recursion in code</td>
 </tr>
 <tr>
 <td>Everitt, Samuel, Kinish, Ritvik</td>
-<td>1/1</td>
+<td>1/1 full score on MC + good implementation of recursion in code</td>
 </tr>
 <tr>
 <td>Bria Gilliam, Shraddha Kadaba, Evan Sanchez, Calissa Tyrrell</td>
-<td>1/1</td>
+<td>1/1 full score on MC + good implementation of recursion in code</td>
 </tr>
 <tr>
 <td>Iris</td>
-<td>1/1</td>
+<td>1/1  full score on MC + good implementation of recursion in code</td>
 </tr>
 <tr>
 <td>Evan Yang, Karthik V, Sanjay B, Pranav S, Jay M.</td>
-<td>0.95/1  because missed one MC question</td>
+<td>0.95/1  missed one MC question + good implementation of recursion in code</td>
 </tr>
 <tr>
 <td>Header</td>
@@ -205,6 +205,11 @@ window.onload = wrap_img;
 <p>In the first function call, 2 + dosomething(2,2). In the second call, 2+2+ dosomething (2,1). Then, base condition is met: 2+2+2 = 6</p>
 </li>
 <li>
+<p>Ternary operator is basically a compressed if else statement, which has the format (condition) ? (Do this part after question mark if condition is true) : (do this part after colon if condition is false) and returns whichever value)
+So reading the statement on Line 2, it says that if num is true (aka not 0), return the module and repeat with recursive call to itself divided by 10. Otherwise, return 0.
+The key is that dividing by 10 is basically like stripping off the last digit, because it gets truncated (ex. 19/10=1.9 which gets rounded down to 1, so it essentially just removes the 9 by moving it behind the decimal point). So what the ternary operator is doing is adding the last digit, then stripping off the last digit, and adding THAT digit, … Essentially taking the sum of all the individual digits.
+So the answer rec(4567) is just 4+5+6+7 = 22</p>
+</li>
 <li>
 <p>Recursion uses more memory than iteration because in recursion, each function call is stored in a call stack.</p>
 </li>
