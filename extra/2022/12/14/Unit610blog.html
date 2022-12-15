@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      5 min read
     
 </span></p>
 
@@ -129,16 +129,8 @@ window.onload = wrap_img;
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h1"><a href="#Table-of-Scores">Table of Scores </a></li>
 <li class="toc-entry toc-h1"><a href="#Unit-6:-Arrays">Unit 6: Arrays </a></li>
-<li class="toc-entry toc-h1"><a href="#Unit-7-Array-List">Unit 7 Array List </a>
-<ul>
-<li class="toc-entry toc-h2"><a href="#Takeaways:">Takeaways: </a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h1"><a href="#Unit-8-2D-Arrays">Unit 8 2D Arrays </a>
-<ul>
-<li class="toc-entry toc-h2"><a href="#Takeways:">Takeways: </a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h1"><a href="#Unit-7-Array-List">Unit 7 Array List </a></li>
+<li class="toc-entry toc-h1"><a href="#Unit-8-2D-Arrays">Unit 8 2D Arrays </a></li>
 <li class="toc-entry toc-h1"><a href="#Unit-9-Inheritance">Unit 9 Inheritance </a></li>
 <li class="toc-entry toc-h1"><a href="#Unit-10-Recursion">Unit 10 Recursion </a></li>
 </ul><!--
@@ -177,12 +169,12 @@ window.onload = wrap_img;
 </tr>
 <tr>
 <td>Unit 8</td>
-<td>/1</td>
+<td>0.7/1</td>
 <td><a href="">Link</a></td>
 </tr>
 <tr>
 <td>Unit 9</td>
-<td>/1</td>
+<td>1/1</td>
 <td><a href="">Link</a></td>
 </tr>
 <tr>
@@ -192,7 +184,7 @@ window.onload = wrap_img;
 </tr>
 <tr>
 <td>TOTAL SCORE</td>
-<td>/5</td>
+<td>4.55/5</td>
 <td>N/A</td>
 </tr>
 </tbody>
@@ -207,20 +199,109 @@ window.onload = wrap_img;
 <h1 id="Unit-6:-Arrays">
 <a class="anchor" href="#Unit-6:-Arrays" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 6: Arrays<a class="anchor-link" href="#Unit-6:-Arrays"> </a>
 </h1>
-<p><a href="https://hetvit27.github.io/hetvitrivedi/2022/10/25/Arrays.html">See Jupyter Notebook #1 here</a></p>
-<p><a href="https://hetvit27.github.io/hetvitrivedi/jupyter/2022/10/09/ListsandArrayLists.html">See Jupyter Notebook #2 here</a></p>
+<p><a href="https://hetvit27.github.io/hetvitrivedi/collegeboard/2022/10/25/Arrays.html">See Jupyter Notebook #1 here</a></p>
+<p><a href="https://hetvit27.github.io/hetvitrivedi/jupyter/2022/10/02/Arrays&amp;Images.html">See Jupyter Notebook #2 here</a></p>
 <p>Takeaways:</p>
 <ul>
 <li>Arrays: one type of data storage</li>
 <li>Reference types</li>
 <li>Need import java.util Arrays </li>
-<li>Initialize arrays using constructors</li>
+<li>Making Arrays: using constructors or using pre-initialized arrays</li>
 <li>Access elements through arrayName[index]</li>
+<li>
+<code>For loop</code>: examines and iterates over every element the array contains in a fast, effective, and more controllable way.</li>
+<li>
+<code>While loop</code>: initialize an array of integers, and traverse the array from start to end using while loop. Start with an index of zero, condition that index is less than the length of array, and increment index inside while loop.</li>
+<li>
+<code>Mutator methods</code>: reset the value of a private variable so that other classes can modify a value stored in the variable without direct access</li>
 </ul>
 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="cm">/* for loop */</span>
+<span class="n">String</span><span class="o">[]</span> <span class="n">cars</span> <span class="o">=</span> <span class="p">{</span><span class="s">"Volvo"</span><span class="p">,</span> <span class="s">"BMW"</span><span class="p">,</span> <span class="s">"Ford"</span><span class="p">,</span> <span class="s">"Mazda"</span><span class="p">};</span>
+<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">cars</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">cars</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Volvo
+BMW
+Ford
+Mazda
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ArrayExample</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">int</span><span class="o">[]</span> <span class="n">numbers</span> <span class="o">=</span> <span class="p">{</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">10</span><span class="p">};</span>
+        <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+        <span class="k">while</span> <span class="p">(</span><span class="n">index</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="p">.</span><span class="na">length</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">numbers</span><span class="o">[</span><span class="n">index</span><span class="o">]</span><span class="p">);</span>
+            <span class="n">index</span><span class="o">++</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">ArrayExample</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2
+4
+6
+8
+10
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -228,12 +309,72 @@ window.onload = wrap_img;
 <a class="anchor" href="#Unit-7-Array-List" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 7 Array List<a class="anchor-link" href="#Unit-7-Array-List"> </a>
 </h1>
 <p><a href="https://hetvit27.github.io/hetvitrivedi/java/labs/2022/11/30/arrayslist.html">See Jupyter Notebook here</a></p>
-<h2 id="Takeaways:">
-<a class="anchor" href="#Takeaways:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Takeaways:<a class="anchor-link" href="#Takeaways:"> </a>
-</h2>
+<p>Takeaways:</p>
+<ul>
+<li>Different from arrays because array lists are dynamic, part of a framework, a class with many methods, more flexible, store object references, slower than arrays, only used with import statement </li>
+<li>
+<code>Primitive Data Types</code>: boolean, char, double, int</li>
+<li>
+<code>Wrapper class data types</code>: boolean, character, double, int </li>
+<li>Methods to know: <ul>
+<li>size(): # of elements in the list</li>
+<li>add(obj): adds an element at the end</li>
+<li>add(index, object): adds element at specific index</li>
+<li>remove(index): removes element from specific index</li>
+<li>set(index, object): replaces element at index with new object</li>
+<li>get(index): returns element at index</li>
+</ul>
+</li>
+</ul>
+
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="p">;</span> 
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">hack1</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span> <span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">hetvifavs</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span><span class="p">(</span><span class="n">Arrays</span><span class="p">.</span><span class="na">asList</span><span class="p">(</span><span class="s">"ripped jeans"</span><span class="p">,</span> <span class="s">"rap music"</span><span class="p">,</span> <span class="s">"black nail polish"</span><span class="p">));</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span> <span class="s">"items "</span> <span class="o">+</span> <span class="n">hetvifavs</span> <span class="o">+</span> <span class="s">" Hetvi's favorite things. There are "</span> <span class="o">+</span> <span class="n">hetvifavs</span><span class="p">.</span><span class="na">size</span><span class="p">()</span> <span class="o">+</span> <span class="s">" things in the list"</span> <span class="p">);</span> 
+        
+        <span class="c1">//objects you add must be of the same data type</span>
+        <span class="n">hetvifavs</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">"bleached hair"</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span> <span class="s">"items "</span> <span class="o">+</span> <span class="n">hetvifavs</span> <span class="o">+</span> <span class="s">" Hetvi's favorite things. There are "</span> <span class="o">+</span> <span class="n">hetvifavs</span><span class="p">.</span><span class="na">size</span><span class="p">()</span> <span class="o">+</span> <span class="s">" things in the list"</span> <span class="p">);</span> 
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">hack1</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>items [ripped jeans, rap music, black nail polish] Hetvi's favorite things. There are 3 things in the list
+items [ripped jeans, rap music, black nail polish, bleached hair] Hetvi's favorite things. There are 4 things in the list
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -241,14 +382,129 @@ window.onload = wrap_img;
 <a class="anchor" href="#Unit-8-2D-Arrays" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 8 2D Arrays<a class="anchor-link" href="#Unit-8-2D-Arrays"> </a>
 </h1>
 <p><a href="https://hetvit27.github.io/hetvitrivedi/jupyter/2022/10/27/2DArray.html">See Jupyter Notebook here</a></p>
-<h2 id="Takeways:">
-<a class="anchor" href="#Takeways:" aria-hidden="true"><span class="octicon octicon-link"></span></a>Takeways:<a class="anchor-link" href="#Takeways:"> </a>
-</h2>
-<p>-</p>
+<p>Takeways:</p>
+<ul>
+<li>
+<code>Array</code>: a data structure used to implement a collection (list) of primitive or object reference data</li>
+<li>
+<code>Element</code> = a single value in the array</li>
+<li>
+<code>Index</code> = the position of the element in the array (starts from 0)</li>
+<li>
+<code>Array Length</code> = the number of elements in the array</li>
+<li>Is public, so can be accessed in any class</li>
+<li>Is also final, so can’t change it after array has been created</li>
+<li>
+<code>Access and update elements</code>: nameOf2DArray[r][c]</li>
+<li>
+<code>Nested loops</code> used to traverse 2D arrays</li>
+</ul>
 
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="cm">/* accessing and changing elements */</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+ 
+        <span class="n">String</span><span class="o">[][]</span> <span class="n">arr</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="p">{</span> <span class="s">"Atlanta"</span><span class="p">,</span> <span class="s">"Baltimore"</span><span class="p">,</span> <span class="s">"Chicago"</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="s">"Australia"</span><span class="p">,</span> <span class="s">"Boston"</span><span class="p">,</span> <span class="s">"Cincinnati"</span> <span class="p">},</span>
+            <span class="p">{</span> <span class="s">"Austin"</span><span class="p">,</span> <span class="s">"Beaumont"</span><span class="p">,</span> <span class="s">"Columbus"</span> <span class="p">}</span>
+         <span class="p">};</span>
+    
+         <span class="n">arr</span><span class="o">[</span><span class="mi">2</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span>  <span class="o">=</span> <span class="s">"Athens"</span><span class="p">;</span>
+         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="mi">2</span><span class="o">][</span><span class="mi">0</span><span class="o">]</span><span class="p">);</span>
+          
+       <span class="p">}</span>
+    
+    <span class="p">}</span>
+    <span class="n">Test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Athens
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="cm">/* nested loop */</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Test</span> <span class="p">{</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+ 
+      <span class="n">String</span><span class="o">[][]</span> <span class="n">arr</span> <span class="o">=</span> <span class="p">{</span>
+         <span class="p">{</span> <span class="s">"a"</span><span class="p">,</span> <span class="s">"f"</span><span class="p">,</span> <span class="s">"g"</span><span class="p">,</span> <span class="s">"l"</span> <span class="p">},</span>
+         <span class="p">{</span> <span class="s">"b"</span><span class="p">,</span> <span class="s">"e"</span><span class="p">,</span> <span class="s">"h"</span><span class="p">,</span> <span class="s">"k"</span> <span class="p">},</span>
+         <span class="p">{</span> <span class="s">"c"</span><span class="p">,</span> <span class="s">"d"</span><span class="p">,</span> <span class="s">"i"</span><span class="p">,</span> <span class="s">"j"</span> <span class="p">}</span>
+      <span class="p">};</span>
+ 
+      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">row</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">row</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">;</span> <span class="n">row</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+         <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">col</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">col</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="n">col</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span> <span class="o">+</span> <span class="s">" "</span><span class="p">);</span>
+         <span class="p">}</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">" "</span><span class="p">);</span>
+      <span class="p">}</span>
+       
+    <span class="p">}</span>
+ 
+ <span class="p">}</span>
+ <span class="n">Test</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>a f g l  
+b e h k  
+c d i j  
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -257,6 +513,43 @@ window.onload = wrap_img;
 </h1>
 <p><a href="https://hetvit27.github.io/hetvitrivedi/collegeboard/2022/12/13/Unit9.html">See Jupyter Notebook here</a></p>
 <p>Takeaways:</p>
+<ul>
+<li>
+<code>Inheritance</code>: define a base class like a car class that has methods and attributes common. For example, there can be a car steering method, gas and break method, and attributes like speed</li>
+<li>
+<code>Extend</code>: Each car that is created will extend from this base class thus inheriting the methods and attributes defined in the base class <ul>
+<li>New car classes with have special features</li>
+</ul>
+</li>
+<li>
+<code>Super Class</code>: Base class that has all the generic methods (base Car Class that has generic methods for all cars)<ul>
+<li>
+<code>protected</code>: access modifier isn't affected by outside</li>
+</ul>
+</li>
+<li>
+<code>Subclass constructor</code>: inherits all methods and attributes from super class<ul>
+<li>In car example, TeslaModelS was a subclass</li>
+<li>In personal example, IphoneX and IphoneV are subclasses </li>
+</ul>
+</li>
+<li>
+<code>super Keyword</code>: superclass objects - used to call superclass methods and access the constructor<ul>
+<li>use constructors defined in the superclass</li>
+<li>can add specific attributes</li>
+<li>super() is the use of the keywords</li>
+</ul>
+</li>
+<li>
+<code>Overloading</code> a method (same name different parameters): two methods with the same name but different arguments; static polymorphism or compile time polymorphism</li>
+<li>
+<code>Overriding</code> a method (same signature of a method): subclass has specific implementation of a method that the superclass provides</li>
+<li>
+<code>Polymorphism</code>: doing one task in many ways through inheritance<ul>
+<li>gearShift in cars can be used in two different ways in two different classes - two implementations through overriding</li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div>
@@ -267,7 +560,23 @@ window.onload = wrap_img;
 <h1 id="Unit-10-Recursion">
 <a class="anchor" href="#Unit-10-Recursion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Unit 10 Recursion<a class="anchor-link" href="#Unit-10-Recursion"> </a>
 </h1>
+<p><a href="https://www.canva.com/design/DAFUHTwLygQ/mUJNpi5BWK6fciLq32PFsQ/view?utm_content=DAFUHTwLygQ&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=sharebutton">My group presentation</a></p>
 <p>Takeaways:</p>
+<ul>
+<li>
+<code>Recursive method</code> calls itself</li>
+<li>
+<code>Base case</code>: after multiple calls base case is reached and its where recursion is stopped and value is returned --&gt; should be written first to avoid infinite recursion</li>
+<li>
+<code>Recursive calls</code> are apart of the method - each have different parameters</li>
+<li>All recursions can be written as loops</li>
+<li>
+<code>Binary search</code>: data must be sorted in order, more efficient than linear search</li>
+<li>
+<code>Linear recursion</code>: a function that only makes a single call to itself each time the function runs</li>
+<li>
+<code>Selection sort</code>: algorithm works by repeatedly finding the minimum element </li>
+</ul>
 
 </div>
 </div>
