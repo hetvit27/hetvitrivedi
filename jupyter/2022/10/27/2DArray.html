@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -806,36 +806,6 @@ Boston
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">public static Position[][] getSuccessorArray(int[][] intArr)</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">{</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    Position[][] newArray = new Position[intArray.length][intArray[0].length];</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    for (int row=0; row &lt; intArray.length; row++)</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    {</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        for (int col=0; col &lt; intArray[0].length; col++)</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        {</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        newArray[row][col] = findPosition(intArray[row][col]+1, intArray);</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">        }</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    }</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">    return newArray;</span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">}</span>
-<span class="ansi-red-intense-fg ansi-bold">Unresolved dependencies:</span>
-<span class="ansi-red-intense-fg ansi-bold">   - class Position</span>
-<span class="ansi-red-intense-fg ansi-bold">   - variable intArray</span></pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
     
 
@@ -858,17 +828,30 @@ Boston
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ChristmasTree</span> <span class="p">{</span>
 
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-   
-     <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="mi">10</span> <span class="o">-</span> <span class="n">i</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span>
-       <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">" "</span><span class="p">);</span>
-      <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">k</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span> <span class="n">k</span><span class="o">++</span><span class="p">)</span>
-       <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">"*"</span><span class="p">);</span>
-      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+ 
+      <span class="n">String</span><span class="o">[][]</span> <span class="n">tree</span> <span class="o">=</span> <span class="p">{</span>
+         <span class="p">{</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">},</span>
+         <span class="p">{</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">},</span>
+         <span class="p">{</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">},</span>
+         <span class="p">{</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">},</span>
+         <span class="p">{</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">},</span>
+         <span class="p">{</span> <span class="s">" "</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">" "</span><span class="p">},</span>
+         <span class="p">{</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">" "</span><span class="p">,</span> <span class="s">" "</span><span class="p">},</span>
+         <span class="p">{</span> <span class="s">" "</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">" "</span><span class="p">},</span>
+         <span class="p">{</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">,</span> <span class="s">"*"</span><span class="p">},</span>
+      <span class="p">};</span>
+ 
+      <span class="c1">// Print the last element in the array!</span>
+      <span class="k">for</span> <span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">row</span> <span class="p">:</span> <span class="n">tree</span><span class="p">)</span> <span class="p">{</span>
+         <span class="k">for</span> <span class="p">(</span><span class="n">String</span> <span class="n">item</span> <span class="p">:</span> <span class="n">row</span><span class="p">)</span> <span class="p">{</span>
+             <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="n">item</span> <span class="o">+</span> <span class="s">" "</span><span class="p">);</span>
+         <span class="p">}</span>
+         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="sc">' '</span><span class="p">);</span>
      <span class="p">}</span>
     <span class="p">}</span>
-   <span class="p">}</span>
-   <span class="n">ChristmasTree</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+ 
+ <span class="p">}</span>
+<span class="n">ChristmasTree</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -881,16 +864,15 @@ Boston
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>          *
-         ***
-        *****
-       *******
-      *********
-     ***********
-    *************
-   ***************
-  *****************
- *******************
+<pre>        *          
+      * * *        
+    * * * * *      
+      * * *        
+    * * * * *      
+  * * * * * * *    
+    * * * * *      
+  * * * * * * *    
+* * * * * * * * *  
 </pre>
 </div>
 </div>
