@@ -429,6 +429,17 @@
         
     
   
+    
+        ,"post39": {
+            "title": "Deployment Blog",
+            "content": "Weekend of January 6 . My team began working on our reunion project using the Leuck template. We had to deploy our backend on hetvitrivedi.tk but I faced many problems. . Needed to change Java version in pom.xml file because it needs to be synched with computer properties | Needed to add port: 8085 in application.properties because it must match deployment. In the Dockerfile and docker-compose-yml, the port is 8085 and it impacts how it loads the application on localhost. | Faced curl problem that output the Connection reset by peer |",
+            "url": "https://hetvit27.github.io/hetvitrivedi/jupyter/2022/01/09/Deployment.html",
+            "relUrl": "/jupyter/2022/01/09/Deployment.html",
+            "date": " • Jan 9, 2022"
+        }
+        
+    
+  
 
   
   
