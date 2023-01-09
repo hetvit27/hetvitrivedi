@@ -149,34 +149,49 @@ window.onload = wrap_img;
 </li>
 </ol>
 <ol>
-<li>
-<p>Needed to add port: 8085 in application.properties because it must match deployment. In the Dockerfile and docker-compose-yml, the port is 8085 and it impacts how it loads the application on localhost.</p>
-<p><img src="../images/pathimportance.png" alt=""></p>
-</li>
+<li>Needed to add port: 8085 in application.properties because it must match deployment. In the Dockerfile and docker-compose-yml, the port is 8085 and it impacts how it loads the application on localhost. </li>
 </ol>
 <ul>
 <li>Need to clarify ports and keep them consistent</li>
 <li>In application.properties file need to have "server.port: 8085" based on what you are exposing</li>
 </ul>
 <ol>
-<li>
-<p>Faced curl problem that output the Connection reset by peer</p>
-<p><img src="../images/curlproblem.png" alt=""></p>
-</li>
+<li>Faced curl problem that output the Connection reset by peer </li>
 </ol>
 <ul>
 <li>This problem had to do with two things: my initial 8199 port was already being used by another group; the ports weren't in sync. 8129 was running for local host but 8085 needed to be exposed (see number 2)</li>
 </ul>
 <ol>
-<li>
-<p>Created faulty nighthawk file that caused nginx to fail</p>
-<p><img src="../images/nginxfail.png" alt=""></p>
-</li>
+<li>Created faulty nighthawk file that caused nginx to fail</li>
 </ol>
 <ul>
 <li>Need to cd /etc/nginx/sites-enabled</li>
 <li>Sudo rm the faulty file</li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="../images/pathimportance.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="../images/curlproblem.png" alt=""></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/hetvitrivedi/images/copied_from_nb/../images/nginxfail.png" alt=""></p>
 
 </div>
 </div>
