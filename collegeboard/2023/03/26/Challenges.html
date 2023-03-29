@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      12 min read
     
 </span></p>
 
@@ -132,6 +132,13 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h3"><a href="#Stacks">Stacks </a></li>
 <li class="toc-entry toc-h3"><a href="#Queues">Queues </a></li>
 <li class="toc-entry toc-h3"><a href="#Linked-List">Linked List </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Implementing-Linked-List">Implementing Linked List </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Queue-Iterator">Queue Iterator </a></li>
+<li class="toc-entry toc-h2"><a href="#Queue-Manager">Queue Manager </a></li>
+<li class="toc-entry toc-h2"><a href="#Code-Explained">Code Explained </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h1"><a href="#Hack-1">Hack 1 </a>
@@ -325,6 +332,23 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Implementing-Linked-List">
+<a class="anchor" href="#Implementing-Linked-List" aria-hidden="true"><span class="octicon octicon-link"></span></a>Implementing Linked List<a class="anchor-link" href="#Implementing-Linked-List"> </a>
+</h1>
+<ul>
+<li>Defines class named LinkedList </li>
+<li>Doubly linked list is a type of linked list in which each element (node) of the list contains a reference to the next and previous element in the list</li>
+<li>Three private instances called data, prevNode, and next Node --&gt; element in current, past, and future node</li>
+<li>Three constructors --&gt; 2 take the linked list object as an input and creates a new node with specific data, 1 takes an existing obkect and creates a new node with the same data and reference and reference as the input</li>
+<li>Lots of setters and getters like setData and getData and setPrevNode</li>
+</ul>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -488,6 +512,21 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Queue-Iterator">
+<a class="anchor" href="#Queue-Iterator" aria-hidden="true"><span class="octicon octicon-link"></span></a>Queue Iterator<a class="anchor-link" href="#Queue-Iterator"> </a>
+</h2>
+<ul>
+<li>QueueIterator class implements the Iterator interface and provides implementation for the has Next and next methods</li>
+<li>Queue class has many methods like add(), delete(), size(), isEmpty (), etc.</li>
+<li>add() adds an element to the end of the queue, delete() removes element at the head, peek() returns the data at the head without removing it, size() returns the number of elements in the queue, etc.</li>
+</ul>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -571,6 +610,23 @@ window.onload = wrap_img;
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Queue-Manager">
+<a class="anchor" href="#Queue-Manager" aria-hidden="true"><span class="octicon octicon-link"></span></a>Queue Manager<a class="anchor-link" href="#Queue-Manager"> </a>
+</h2>
+<ul>
+<li>Constructor QueueManager (name, seriesOfObjects) - creates a new QueueManager object with a specified name and a queue intialized with a series of arrays of objects</li>
+<li>add(data): adds an element of type T to the end of the queue</li>
+<li>addList(seriesOfObjects) - adds a list of objects to the end of the queue</li>
+<li>delete() - deletes the element at the front of queue</li>
+<li>printQueue() - prints the contents of the queue </li>
+</ul>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -646,6 +702,23 @@ Integers count: 10, data: 0 1 2 3 4 5 6 7 8 9
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Code-Explained">
+<a class="anchor" href="#Code-Explained" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code Explained<a class="anchor-link" href="#Code-Explained"> </a>
+</h2>
+<ul>
+<li>main method creates three instances of QueueManager</li>
+<li>qWords: queue of strings</li>
+<li>qNums: queue of integers</li>
+<li>qMix: a queue of mixed types of data</li>
+<li>printQueue:  calls on QueueManager to print its name, the number of elements in the queue, and the contents of the queue </li>
+</ul>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
