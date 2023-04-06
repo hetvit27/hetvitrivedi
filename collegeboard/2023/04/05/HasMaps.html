@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -196,24 +196,26 @@ window.onload = wrap_img;
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Average swaps: "</span> <span class="o">+</span> <span class="n">selectionSort</span><span class="p">.</span><span class="na">swaps</span><span class="o">/</span><span class="mi">12</span><span class="p">);</span>
     <span class="p">}</span>
 
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sort</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">numbers</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">.</span><span class="na">length</span><span class="p">;</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sort</span><span class="p">(</span><span class="kt">int</span><span class="o">[]</span> <span class="n">numbers</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// selection sort algorithm</span>
+        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">.</span><span class="na">length</span><span class="p">;</span> <span class="c1">// figures out the length of the array</span>
                 
-        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-            <span class="kt">int</span> <span class="n">minIndex</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// for loop used to repeatedly finds the minimum value and swaps it</span>
+            <span class="kt">int</span> <span class="n">minIndex</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span> <span class="c1">// outer loop iterates through array numbers and the minimum value is set to i</span>
             
-            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-                <span class="n">comparisons</span><span class="o">++</span><span class="p">;</span>
-                <span class="k">if</span> <span class="p">(</span><span class="n">numbers</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="o">[</span><span class="n">minIndex</span><span class="o">]</span><span class="p">)</span> <span class="p">{</span>
-                    <span class="n">minIndex</span> <span class="o">=</span> <span class="n">j</span><span class="p">;</span>
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// The inner loop  iterates through unsorted portion of the array after the current index i to the last element the algorithm compares the current element with the minimum element found so far</span>
+
+ 
+                <span class="n">comparisons</span><span class="o">++</span><span class="p">;</span> <span class="c1">// records the number of comparision </span>
+                <span class="k">if</span> <span class="p">(</span><span class="n">numbers</span><span class="o">[</span><span class="n">j</span><span class="o">]</span> <span class="o">&lt;</span> <span class="n">numbers</span><span class="o">[</span><span class="n">minIndex</span><span class="o">]</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// inside loop checks if the index is different from the current value</span>
+                    <span class="n">minIndex</span> <span class="o">=</span> <span class="n">j</span><span class="p">;</span> <span class="c1">// if it is, the current value is set as the index </span>
                 <span class="p">}</span>
             <span class="p">}</span>
-            
-            <span class="k">if</span> <span class="p">(</span><span class="n">minIndex</span> <span class="o">!=</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+        
+            <span class="k">if</span> <span class="p">(</span><span class="n">minIndex</span> <span class="o">!=</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// stores value of first element in the temp variable and then copying the value of the temporary variable to the minimum element's original position </span>
                 <span class="kt">int</span> <span class="n">temp</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="p">;</span>
                 <span class="n">numbers</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">numbers</span><span class="o">[</span><span class="n">minIndex</span><span class="o">]</span><span class="p">;</span>
                 <span class="n">numbers</span><span class="o">[</span><span class="n">minIndex</span><span class="o">]</span> <span class="o">=</span> <span class="n">temp</span><span class="p">;</span>
-                <span class="n">swaps</span><span class="o">++</span><span class="p">;</span>
+                <span class="n">swaps</span><span class="o">++</span><span class="p">;</span> <span class="c1">// number of swaps is implementing</span>
             <span class="p">}</span>
         <span class="p">}</span>
         
