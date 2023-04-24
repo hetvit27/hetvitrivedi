@@ -82,7 +82,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      5 min read
     
 </span></p>
 
@@ -244,6 +244,209 @@ i++;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">boolean</span> <span class="n">isEngineRunning</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">speed</span> <span class="o">=</span> <span class="mi">60</span><span class="p">;</span>
+<span class="kt">boolean</span> <span class="n">isSpeedAboveThreshold</span> <span class="o">=</span> <span class="n">speed</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">isEngineRunning</span> <span class="o">&amp;&amp;</span> <span class="n">isSpeedAboveThreshold</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The car is moving fast!"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The car is not moving fast."</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">boolean</span> <span class="n">isEngineRunning</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">speed</span> <span class="o">=</span> <span class="mi">60</span><span class="p">;</span>
+<span class="kt">boolean</span> <span class="n">isSpeedAboveThreshold</span> <span class="o">=</span> <span class="n">speed</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">;</span>
+<span class="kt">boolean</span> <span class="n">isEmergencyBrakeApplied</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+
+<span class="c1">// compound boolean</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">isEngineRunning</span> <span class="o">&amp;&amp;</span> <span class="p">(</span><span class="n">isSpeedAboveThreshold</span> <span class="o">||</span> <span class="n">isEmergencyBrakeApplied</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The car is in an emergency situation!"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The car is in a normal situation."</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">boolean</span> <span class="n">isEngineRunning</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">isEngineRunning</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The engine is running"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The car's engine is not running."</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kt">int</span> <span class="n">speed</span> <span class="o">=</span> <span class="mi">80</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">speedLimit</span> <span class="o">=</span> <span class="mi">60</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">speed</span> <span class="o">&gt;</span> <span class="n">speedLimit</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Warning: you are above the speed limit!"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"You are below the speed limit"</span><span class="p">);</span>
+
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">String</span> <span class="n">weather</span> <span class="o">=</span> <span class="s">"rainy"</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">visibility</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">weather</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">"sunny"</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Driving in normal mode."</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">weather</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">"rainy"</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">visibility</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Driving in slow mode due to low visibility."</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">weather</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">"snowy"</span><span class="p">))</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Driving in snow mode."</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"Driving in normal mode."</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">String</span> <span class="n">carMake</span> <span class="o">=</span> <span class="s">"Toyota"</span><span class="p">;</span>
+<span class="n">String</span> <span class="n">carModel</span> <span class="o">=</span> <span class="s">"Camry"</span><span class="p">;</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">carMake</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="s">"Toyota"</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">carModel</span> <span class="o">==</span> <span class="s">"Camry"</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The car is a Toyota Camry."</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"The car is not a Toyota Camry."</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="n">Car</span> <span class="n">car1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Car</span><span class="p">(</span><span class="s">"Toyota"</span><span class="p">,</span> <span class="s">"Camry"</span><span class="p">);</span>
+<span class="n">Car</span> <span class="n">car2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Car</span><span class="p">(</span><span class="s">"Toyota"</span><span class="p">,</span> <span class="s">"Camry"</span><span class="p">);</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">car1</span> <span class="o">==</span> <span class="n">car2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"car1 and car2 are the same object."</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"car1 and car2 are different objects."</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Create two Car objects</span>
+    <span class="n">Car</span> <span class="n">car1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Car</span><span class="p">(</span><span class="s">"Toyota"</span><span class="p">,</span> <span class="s">"Camry"</span><span class="p">,</span> <span class="mi">2020</span><span class="p">);</span>
+    <span class="n">Car</span> <span class="n">car2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Car</span><span class="p">(</span><span class="s">"Toyota"</span><span class="p">,</span> <span class="s">"Camry"</span><span class="p">,</span> <span class="mi">2020</span><span class="p">);</span>
+
+    <span class="c1">// Compare using equals() method</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">car1</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">car2</span><span class="p">))</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"car1 is equal to car2"</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"car1 is not equal to car2"</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
